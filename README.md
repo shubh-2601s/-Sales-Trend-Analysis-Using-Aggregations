@@ -37,14 +37,19 @@ The dataset includes 100 rows covering sales throughout the year 2024.
 Run the following SQL commands to create the database and the `online_sales` table:
 
 CREATE DATABASE IF NOT EXISTS sales_db;
+
 USE sales_db;
 
 DROP TABLE IF EXISTS online_sales;
 
 CREATE TABLE online_sales (
+
     order_id INT AUTO_INCREMENT PRIMARY KEY,
+    
     order_date DATE NOT NULL,
+    
     amount DECIMAL(10, 2) NOT NULL,
+    
     product_id INT NOT NULL
 );
 ![image](https://github.com/user-attachments/assets/1ae5d1be-0dd6-44cf-9757-0ab8b884d8ee)
