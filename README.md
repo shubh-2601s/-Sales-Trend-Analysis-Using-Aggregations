@@ -148,8 +148,11 @@ LIMIT 3;
 ## Author
 
 **Shubham S**
+
 Email: [10221shubham.s@gmail.com](mailto:10221shubham.s@gmail.com)
+
 LinkedIn: [https://www.linkedin.com/in/shubham-s-14ba6a283/](https://www.linkedin.com/in/shubham-s-14ba6a283/)
+
 GitHub: [https://github.com/shubh-2601s](https://github.com/shubh-2601s)
 
 ---
