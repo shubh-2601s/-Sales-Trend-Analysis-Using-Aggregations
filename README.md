@@ -136,7 +136,8 @@ GROUP BY year, month
 ORDER BY year DESC, month DESC
 LIMIT 3;
 ```
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/703e5a15-3a90-4fe0-b0ac-732afd83d820)
+
 
 ---
 
