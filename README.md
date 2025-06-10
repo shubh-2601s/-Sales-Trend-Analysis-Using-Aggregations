@@ -78,9 +78,13 @@ The key SQL queries use the following concepts:
 
 
 SELECT 
+  
   EXTRACT(YEAR FROM order_date) AS year,
+  
   EXTRACT(MONTH FROM order_date) AS month
+
 FROM online_sales
+
 LIMIT 10;
 ![image](https://github.com/user-attachments/assets/07040f16-33d6-408e-b440-463e76cedc71)
 
@@ -88,12 +92,19 @@ LIMIT 10;
 ### Monthly Revenue and Order Volume
 
 SELECT 
+ 
   EXTRACT(YEAR FROM order_date) AS year,
+  
   EXTRACT(MONTH FROM order_date) AS month,
+  
   SUM(amount) AS total_revenue,
+  
   COUNT(DISTINCT order_id) AS order_volume
+
 FROM online_sales
+
 GROUP BY year, month
+
 ORDER BY year ASC, month ASC;
 ![image](https://github.com/user-attachments/assets/bff5d272-1df9-43d3-9a32-60c97f859291)
 
@@ -101,12 +112,19 @@ ORDER BY year ASC, month ASC;
 ### Filter Results for Specific Time Period
 
 SELECT 
+ 
   EXTRACT(YEAR FROM order_date) AS year,
+  
   EXTRACT(MONTH FROM order_date) AS month,
+  
   SUM(amount) AS total_revenue,
+  
   COUNT(DISTINCT order_id) AS order_volume
+
 FROM online_sales
+
 WHERE order_date BETWEEN '2024-01-01' AND '2024-06-30'
+
 GROUP BY year, month
 ORDER BY year ASC, month ASC;
 ![image](https://github.com/user-attachments/assets/7c14e2a6-d2f2-4184-8d69-aff79a0f96de)
@@ -115,13 +133,21 @@ ORDER BY year ASC, month ASC;
 ### Limit Output to Latest 3 Months
 
 SELECT 
+  
   EXTRACT(YEAR FROM order_date) AS year,
+  
   EXTRACT(MONTH FROM order_date) AS month,
+  
   SUM(amount) AS total_revenue,
+  
   COUNT(DISTINCT order_id) AS order_volume
+
 FROM online_sales
+
 GROUP BY year, month
+
 ORDER BY year DESC, month DESC
+
 LIMIT 3;
 ![Uploading image.png…]()
 
