@@ -49,7 +49,9 @@ CREATE TABLE online_sales (
     product_id INT NOT NULL
 );
 ````
-![image](https://github.com/user-attachments/assets/1ae5d1be-0dd6-44cf-9757-0ab8b884d8ee)
+
+
+![image](https://github.com/user-attachments/assets/9819eed0-3ec2-4b6f-82ad-5fdb6a1fd402)
 
 
 ### 2. Insert Sample Data
@@ -59,7 +61,7 @@ Insert 100 sample sales records spanning January to December 2024:
 -- (Insert the 100 rows sample data here - see SQL script)
 ```
 
-![image](https://github.com/user-attachments/assets/9819eed0-3ec2-4b6f-82ad-5fdb6a1fd402)
+![image](https://github.com/user-attachments/assets/1ae5d1be-0dd6-44cf-9757-0ab8b884d8ee)
 
 
 ### 3. Run Analysis Queries
