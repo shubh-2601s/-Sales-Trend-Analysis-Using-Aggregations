@@ -82,7 +82,7 @@ The key SQL queries use the following concepts:
 ### Extract Year and Month
 
 
-SELECT 
+``` SELECT 
   
   EXTRACT(YEAR FROM order_date) AS year,
   
@@ -90,7 +90,7 @@ SELECT
 
 FROM online_sales
 
-LIMIT 10;
+LIMIT 10; ```
 ![image](https://github.com/user-attachments/assets/07040f16-33d6-408e-b440-463e76cedc71)
 
 
